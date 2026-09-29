@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { PageHero } from "../Layout.jsx";
 import { choreographers, dances, groups, regions, story } from "../data.js";
 import { Icon } from "../icons.jsx";
+import { media } from "../media.js";
 
 const jumps = [
   { href: "/za-nas#istoria", label: "История", icon: "sun", tone: "orange" },
@@ -37,19 +38,19 @@ export default function About() {
         </div>
         <div className="about-photos">
           <Link className="tile" to="/albumi/scena">
-            <img src="/photos/brussels-dance.jpg" alt="Танц в Брюксел" style={{ objectPosition: "center 42%" }} />
+            <img src={media("/photos/brussels-dance.jpg")} alt="Танц в Брюксел" style={{ objectPosition: "center 42%" }} />
             <span>Брюксел</span>
           </Link>
           <Link className="tile" to="/albumi/scena">
-            <img src="/photos/ancient-lift.jpg" alt="Концерт на Античния театър" style={{ objectPosition: "center 40%" }} />
+            <img src={media("/photos/ancient-lift.jpg")} alt="Концерт на Античния театър" style={{ objectPosition: "center 40%" }} />
             <span>Античен театър</span>
           </Link>
           <Link className="tile" to="/albumi/scena">
-            <img src="/photos/skopje.jpg" alt="Най-малката група в Скопие" style={{ objectPosition: "center 46%" }} />
+            <img src={media("/photos/skopje.jpg")} alt="Най-малката група в Скопие" style={{ objectPosition: "center 46%" }} />
             <span>Скопие</span>
           </Link>
           <Link className="tile" to="/albumi/ploshtad">
-            <img src="/photos/square.jpg" alt="Хоро пред часовниковата кула" style={{ objectPosition: "center 45%" }} />
+            <img src={media("/photos/square.jpg")} alt="Хоро пред часовниковата кула" style={{ objectPosition: "center 45%" }} />
             <span>Площадът</span>
           </Link>
         </div>
@@ -78,9 +79,9 @@ export default function About() {
           </p>
         </div>
         <div className="about-photos about-photos-3">
-          <img src="/photos/plovdiv-group.jpg" alt="Детска група след фестивала в Пловдив" style={{ objectPosition: "center 45%" }} />
-          <img src="/photos/contest-men.jpg" alt="Мъжка редица на конкурсна сцена" style={{ objectPosition: "center 78%" }} />
-          <img src="/photos/awards-group.jpg" alt="Танцьорите с купи след конкурса" style={{ objectPosition: "center 40%" }} />
+          <img src={media("/photos/plovdiv-group.jpg")} alt="Детска група след фестивала в Пловдив" style={{ objectPosition: "center 45%" }} />
+          <img src={media("/photos/contest-men.jpg")} alt="Мъжка редица на конкурсна сцена" style={{ objectPosition: "center 78%" }} />
+          <img src={media("/photos/awards-group.jpg")} alt="Танцьорите с купи след конкурса" style={{ objectPosition: "center 40%" }} />
         </div>
         <ol className="group-board">
           {groups.map((group) => (
@@ -104,7 +105,7 @@ export default function About() {
         </div>
         <div className="leader-cards">
           <article>
-            <img src="/photos/tanya.jpg" alt="Таня Димитрова" />
+            <img src={media("/photos/tanya.jpg")} alt="Таня Димитрова" />
             <div>
               <p className="role">Основател и главен художествен ръководител</p>
               <h3>Таня Димитрова</h3>
@@ -121,7 +122,7 @@ export default function About() {
             </div>
           </article>
           <article>
-            <img src="/photos/dimitar.jpg" alt="Димитър Димитров" />
+            <img src={media("/photos/dimitar.jpg")} alt="Димитър Димитров" />
             <div>
               <p className="role">Художествен ръководител и хореограф</p>
               <h3>Димитър Димитров</h3>

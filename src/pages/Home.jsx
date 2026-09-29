@@ -2,28 +2,29 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { albums, dances, festivals, groups, stageVideo } from "../data.js";
 import { Icon } from "../icons.jsx";
+import { media } from "../media.js";
 
 const mosaic = [
   {
-    src: "/photos/ancient-lift.jpg",
+    src: media("/photos/ancient-lift.jpg"),
     caption: "Античен театър, Пловдив",
     to: "/albumi/scena",
     focus: "center 42%",
   },
   {
-    src: "/photos/brussels-horo.jpg",
+    src: media("/photos/brussels-horo.jpg"),
     caption: "Хоро в Брюксел",
     to: "/albumi/scena",
     focus: "center bottom",
   },
   {
-    src: "/photos/contest-2026.jpg",
+    src: media("/photos/contest-2026.jpg"),
     caption: "Конкурс, 2026",
     to: "/albumi/scena",
     focus: "center 46%",
   },
   {
-    src: "/photos/kids-2026.jpg",
+    src: media("/photos/kids-2026.jpg"),
     caption: "Най-малките",
     to: "/albumi/scena",
     focus: "center 28%",
@@ -83,7 +84,7 @@ export default function Home() {
         </div>
         <div className="hero-photo">
           <img
-            src="/photos/brussels-dance.jpg"
+            src={media("/photos/brussels-dance.jpg")}
             alt="Танцьори от „Чудесия“ на площада в Брюксел"
           />
         </div>
@@ -137,14 +138,14 @@ export default function Home() {
           </div>
           <div className="people-portraits">
             <figure>
-              <img src="/photos/tanya.jpg" alt="Таня Димитрова" />
+              <img src={media("/photos/tanya.jpg")} alt="Таня Димитрова" />
               <figcaption>
                 <strong>Таня Димитрова</strong>
                 <span>Основател и художествен ръководител</span>
               </figcaption>
             </figure>
             <figure>
-              <img src="/photos/dimitar.jpg" alt="Димитър Димитров" />
+              <img src={media("/photos/dimitar.jpg")} alt="Димитър Димитров" />
               <figcaption>
                 <strong>Димитър Димитров</strong>
                 <span>Художествен ръководител и хореограф</span>

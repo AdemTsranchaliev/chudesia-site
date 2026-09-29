@@ -2,28 +2,29 @@ import { Link } from "react-router-dom";
 import { PageHero } from "../Layout.jsx";
 import { festivals } from "../data.js";
 import { Icon } from "../icons.jsx";
+import { media } from "../media.js";
 
 const shots = [
   {
-    src: "/photos/awards-group.jpg",
+    src: media("/photos/awards-group.jpg"),
     alt: "Танцьорите с купи и дипломи след конкурса",
     label: "След конкурса",
     focus: "center 42%",
   },
   {
-    src: "/photos/trophies-2026.jpg",
+    src: media("/photos/trophies-2026.jpg"),
     alt: "Купи и дипломи от Голямата танцова награда, 2026",
     label: "Купите, 2026",
     focus: "center 28%",
   },
   {
-    src: "/photos/diploma-2026.jpg",
+    src: media("/photos/diploma-2026.jpg"),
     alt: "Диплом от Голямата танцова награда, 2026",
     label: "Диплом, 2026",
     focus: "center 36%",
   },
   {
-    src: "/photos/lyra.jpg",
+    src: media("/photos/lyra.jpg"),
     alt: "Диплом за Кристална лира 2025, категория танцов фолклор",
     label: "Кристална лира",
     focus: "center 22%",

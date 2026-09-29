@@ -1,3 +1,4 @@
+import { media } from "./media.js";
 export const groups = [
   {
     n: "01",
@@ -56,7 +57,7 @@ export const story = [
     year: "2024",
     title: "Топ 10",
     text: "Голямата награда „Огънят на поколенията“ при любителските състави, 13–18 години.",
-    image: "/photos/flame.jpg",
+    image: media("/photos/flame.jpg"),
     focus: "center 42%",
   },
   {
@@ -68,14 +69,14 @@ export const story = [
     year: "2025",
     title: "Брюксел",
     text: "По идея на Таня Димитрова съставът играе в Европейския парламент.",
-    image: "/photos/brussels-group.jpg",
+    image: media("/photos/brussels-group.jpg"),
     focus: "center 62%",
   },
   {
     year: "Днес",
     title: "Залата",
     text: "Над 350 деца в осем групи, от около 5 до 18 години.",
-    image: "/photos/kids-2026.jpg",
+    image: media("/photos/kids-2026.jpg"),
     focus: "center 30%",
   },
 ];
@@ -85,7 +86,7 @@ export const choreographers = [
     name: "Димитър Димитров",
     role: "На състава",
     text: "Художествен ръководител и хореограф. Заедно с Таня Димитрова води осемте групи — от репетицията до фестивалната сцена.",
-    image: "/photos/dimitar.jpg",
+    image: media("/photos/dimitar.jpg"),
   },
   {
     name: "Васил Герлимов",
@@ -100,7 +101,7 @@ export const dances = [
     area: "Тракия",
     by: "Хореография Васил Герлимов · музика Банко Минчев",
     text: "През 2025 г. произведението получава отличие за новосъздаден танц на „Голямата танцова награда“.",
-    image: "/photos/ancient-dance.jpg",
+    image: media("/photos/ancient-dance.jpg"),
     focus: "center 48%",
     place: "Античен театър",
   },
@@ -108,7 +109,7 @@ export const dances = [
     title: "Тракийска закачка",
     area: "Тракия",
     text: "С този танц съставът печели първо място на Международния фестивал „Пловдив — древен и вечен“.",
-    image: "/photos/plovdiv-group.jpg",
+    image: media("/photos/plovdiv-group.jpg"),
     focus: "center 42%",
     place: "Пловдив",
   },
@@ -195,7 +196,7 @@ export const festivals = [
 export const stageVideo = {
   title: "От сцената",
   text: "Кадър от конкурсната сцена. Клип от концерт или турне се пуска на това място.",
-  poster: "/photos/contest-2026.jpg",
+  poster: media("/photos/contest-2026.jpg"),
   youtubeId: "",
   src: "",
 };
@@ -210,12 +211,12 @@ export const albums = [
     text: "Хора пред часовниковата кула и на открито — концертите, с които „Чудесия“ излиза в града.",
     photos: [
       {
-        src: "/photos/square.jpg",
+        src: media("/photos/square.jpg"),
         alt: "Хоро на „Чудесия“ пред часовниковата кула в Пазарджик",
         caption: "Пред часовниковата кула",
       },
       {
-        src: "/photos/square-show.jpg",
+        src: media("/photos/square-show.jpg"),
         alt: "Концерт на площад „Константин Величков“",
         caption: "Концерт на площада",
       },
@@ -230,52 +231,52 @@ export const albums = [
     text: "Кадри от конкурсни и концертни сцени. Новите снимки от турнета се добавят в този албум.",
     photos: [
       {
-        src: "/photos/ancient-lift.jpg",
+        src: media("/photos/ancient-lift.jpg"),
         alt: "Танц на сцената на Античния театър в Пловдив",
         caption: "Античен театър, Пловдив",
       },
       {
-        src: "/photos/ancient-dance.jpg",
+        src: media("/photos/ancient-dance.jpg"),
         alt: "Хоро на сцената на Античния театър",
         caption: "Концерт в Пловдив",
       },
       {
-        src: "/photos/contest-2026.jpg",
+        src: media("/photos/contest-2026.jpg"),
         alt: "Съставът на Голямата танцова награда през 2026",
         caption: "Голямата танцова награда, 2026",
       },
       {
-        src: "/photos/contest-men.jpg",
+        src: media("/photos/contest-men.jpg"),
         alt: "Мъжка редица на конкурсната сцена",
         caption: "На конкурсната сцена",
       },
       {
-        src: "/photos/kids-2026.jpg",
+        src: media("/photos/kids-2026.jpg"),
         alt: "Най-малките танцьори на Голямата танцова награда, 2026",
         caption: "Най-малките на сцена",
       },
       {
-        src: "/photos/brussels-dance.jpg",
+        src: media("/photos/brussels-dance.jpg"),
         alt: "Танц пред Station Europe в Брюксел",
         caption: "Брюксел",
       },
       {
-        src: "/photos/brussels-horo.jpg",
+        src: media("/photos/brussels-horo.jpg"),
         alt: "Хоро пред сградата на Европейския парламент",
         caption: "Хоро в Брюксел",
       },
       {
-        src: "/photos/brussels-group.jpg",
+        src: media("/photos/brussels-group.jpg"),
         alt: "Съставът пред Европейския парламент",
         caption: "Пред Европарламента",
       },
       {
-        src: "/photos/skopje.jpg",
+        src: media("/photos/skopje.jpg"),
         alt: "Най-малката група на фестивала в Скопие",
         caption: "Скопие",
       },
       {
-        src: "/photos/plovdiv-group.jpg",
+        src: media("/photos/plovdiv-group.jpg"),
         alt: "Детската група на фестивала в Колодрума",
         caption: "Пловдив — древен и вечен",
       },
@@ -290,22 +291,22 @@ export const albums = [
     text: "Купи, дипломи и отличия от конкурсите.",
     photos: [
       {
-        src: "/photos/awards-group.jpg",
+        src: media("/photos/awards-group.jpg"),
         alt: "Танцьорите с купи и дипломи след конкурса",
         caption: "След конкурса, 2026",
       },
       {
-        src: "/photos/trophies-2026.jpg",
+        src: media("/photos/trophies-2026.jpg"),
         alt: "Купи и дипломи от Голямата танцова награда, 2026",
         caption: "Купи и дипломи, 2026",
       },
       {
-        src: "/photos/diploma-2026.jpg",
+        src: media("/photos/diploma-2026.jpg"),
         alt: "Диплом за първо място, първа възрастова група, 2026",
         caption: "Първо място, първа възрастова група, 2026",
       },
       {
-        src: "/photos/lyra.jpg",
+        src: media("/photos/lyra.jpg"),
         alt: "Диплом за Кристална лира 2025 в категория танцов фолклор",
         caption: "Кристална лира, 2025",
       },
